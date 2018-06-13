@@ -189,8 +189,8 @@ class CycleGAN:
         if not os.path.exists(self._images_dir):
             os.makedirs(self._images_dir)
 
-        names = ['inputA_', 'inputB_', 'fakeA_',
-                 'fakeB_', 'cycA_', 'cycB_']
+        names = ['inputA_', 'inputB_', 'fakeB_',
+                 'fakeA_', 'cycA_', 'cycB_']
 
         with open(os.path.join(
                 self._output_dir, 'epoch_' + str(epoch) + '.html'
